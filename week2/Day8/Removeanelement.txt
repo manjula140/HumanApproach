@@ -1,0 +1,44 @@
+output
+
+Enter the array length: 5
+Enter the array elements:
+7
+9
+2
+5
+8
+Enter the index of the element to be deleted: 3
+7
+9
+2
+8
+
+program
+
+import java.util.*;
+class Removeanelement
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the array length: ");
+			int n=input.nextInt();
+			int[] arr=new int[n];
+			System.out.println("Enter the array elements: ");
+			for(int i=0;i<n;i++)
+			{
+				arr[i]=input.nextInt();
+			}
+			System.out.print("Enter the index of the element to be deleted: ");
+			int indx=input.nextInt();
+			for(int i=indx;i<n-1;i++)
+			{
+				arr[indx]=arr[indx+1];
+			}
+			n--;
+			for(int i=0;i<n;i++)
+			{
+				System.out.println(arr[i]);
+			}
+		}
+	}

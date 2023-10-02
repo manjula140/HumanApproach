@@ -1,0 +1,26 @@
+output
+
+Enter the number: 2024
+2024 is leap year
+
+
+program
+
+import java.util.*;
+class Leapyear
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the number: ");
+			int year=input.nextInt();
+			if(year%4==0||year%100==0)
+			{
+				System.out.print(year+ " is a leap year");
+			}
+			else
+			{
+				System.out.print(year+ " is not a leap year");
+			}					
+		}
+	}

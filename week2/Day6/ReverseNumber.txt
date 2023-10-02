@@ -1,0 +1,28 @@
+output
+
+Enter the number:123
+321
+
+program
+
+import java.util.*;
+class ReverseNumber
+	{
+		public static void main(String arg[])
+		{ 
+			int rem,quo,result=0;
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the number:");
+			int num=input.nextInt();
+			while(num>0)
+			{
+				rem =num%10;
+				quo=num/10;
+				result=result*10+rem;
+				num=quo;
+			}
+			System.out.print(result);
+		}
+	}
+
+ 

@@ -1,0 +1,19 @@
+output
+
+Enter the character:1
+49
+
+program
+
+import java.util.*;
+class Asciivalue
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the character:");
+			char c=input.next().charAt(0);
+			int result=c;
+			System.out.print(result);
+		}
+	}

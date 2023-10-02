@@ -1,0 +1,33 @@
+output
+
+The num 6 is even
+
+
+program
+
+import java.util.*;
+class Evenorodd
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System .out.print("Enter the number:");
+			int num=input.nextInt();
+			if(num%2==0)
+			{
+				System.out.print("The num "+ num +" is even");
+			}
+			else
+			{
+				System.out.print("The num "+ num +" is odd");
+			}
+		}
+	}
+
+
+
+
+
+
+
+

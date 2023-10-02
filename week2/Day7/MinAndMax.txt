@@ -1,0 +1,48 @@
+output
+
+Enter the array length: 5
+Enter the array elements:
+5
+8
+6
+2
+7
+The minimum value is: 2
+The maximum value is: 8
+
+program
+
+import java.util.*;
+class MinAndMax
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the array length: ");
+			int n=input.nextInt();
+			int[] arr=new int[n];
+			System.out.println("Enter the array elements: ");
+			for(int i=0;i<n;i++)
+			{
+				arr[i]=input.nextInt();
+			}
+			int min=arr[0];
+			int max=arr[0];
+			for(int i=0;i<n;i++)
+			{
+				if(arr[i]<min)
+				{
+					min=arr[i];
+				}
+				if(arr[i]>max)
+				{
+					max=arr[i];
+				}
+			}
+			System.out.println("The minimum value is: "+min);
+			System.out.println("The maximum value is: "+max);
+		}
+	}
+	
+			
+		
